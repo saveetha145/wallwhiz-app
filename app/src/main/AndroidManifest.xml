@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WallWhiz"
+        tools:targetApi="31">
+        <activity
+            android:name=".acrylicframe"
+            android:exported="false" />
+        <activity
+            android:name=".adminprofile"
+            android:exported="false" />
+        <activity
+            android:name=".ar"
+            android:exported="false" />
+        <activity
+            android:name=".delivery"
+            android:exported="false" />
+        <activity
+            android:name=".digital"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile"
+            android:exported="false" />
+        <activity
+            android:name=".forget"
+            android:exported="false" />
+        <activity
+            android:name=".glass"
+            android:exported="false" />
+        <activity
+            android:name=".layout1"
+            android:exported="false" />
+        <activity
+            android:name=".layout7"
+            android:exported="false" />
+        <activity
+            android:name=".layout_6"
+            android:exported="false" />
+        <activity
+            android:name=".layout5"
+            android:exported="false" />
+        <activity
+            android:name=".layout_4"
+            android:exported="false" />
+        <activity
+            android:name=".layout3"
+            android:exported="false" />
+        <activity
+            android:name=".layout2"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".mosaic"
+            android:exported="false" />
+        <activity
+            android:name=".oil"
+            android:exported="false" />
+        <activity
+            android:name=".order"
+            android:exported="false" />
+        <activity
+            android:name=".orderlist"
+            android:exported="false" />
+        <activity
+            android:name=".pencil"
+            android:exported="false" />
+        <activity
+            android:name=".review"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".size"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".truck"
+            android:exported="false" />
+        <activity
+            android:name=".upload"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".woodenart"
+            android:exported="false" />
+        <activity
+            android:name=".woodenframe"
+            android:exported="false" />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
