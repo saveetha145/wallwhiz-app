@@ -24,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="REVIEW AND RATING"
         android:fontFamily="@font/titan_one"
+        android:text="REVIEW AND RATING"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -50,183 +50,156 @@
         app:layout_constraintVertical_bias="0.0" />
 
 
-<!--    <TextView-->
-<!--        android:id="@+id/write"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Write a Review"-->
-<!--        android:textSize="24sp"-->
-<!--        android:textStyle="bold"-->
-<!--        tools:layout_editor_absoluteX="43dp"-->
-<!--        tools:layout_editor_absoluteY="587dp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/exp"-->
-<!--        android:layout_width="180dp"-->
-<!--        android:layout_height="32dp"-->
-<!--        android:text="Rate Your Experience"-->
-<!--        android:textSize="16sp"-->
-<!--        android:textStyle="bold"-->
-<!--        tools:layout_editor_absoluteX="22dp"-->
-<!--        tools:layout_editor_absoluteY="246dp" />-->
+    <TextView
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Write a Review"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/comments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    <ImageView-->
-<!--        android:id="@+id/five1"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="56dp"-->
-<!--        tools:layout_editor_absoluteY="302dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/four"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="56dp"-->
-<!--        tools:layout_editor_absoluteY="359dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/five1"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="177dp"-->
-<!--        tools:layout_editor_absoluteY="302dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/five1"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="118dp"-->
-<!--        tools:layout_editor_absoluteY="302dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/five1"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="233dp"-->
-<!--        tools:layout_editor_absoluteY="302dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/five1"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="290dp"-->
-<!--        tools:layout_editor_absoluteY="302dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/four"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="118dp"-->
-<!--        tools:layout_editor_absoluteY="359dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/four"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="177dp"-->
-<!--        tools:layout_editor_absoluteY="359dp" />-->
+    <TextView
+        android:id="@+id/exp"
+        android:layout_width="180dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="244dp"
+        android:text="Rate Your Experience"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-<!--    <ImageView-->
-<!--        android:id="@+id/two"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="118dp"-->
-<!--        tools:layout_editor_absoluteY="471dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/two"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="56dp"-->
-<!--        tools:layout_editor_absoluteY="471dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/four"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="233dp"-->
-<!--        tools:layout_editor_absoluteY="359dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/three"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="56dp"-->
-<!--        tools:layout_editor_absoluteY="416dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/three"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="118dp"-->
-<!--        tools:layout_editor_absoluteY="416dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/three"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="177dp"-->
-<!--        tools:layout_editor_absoluteY="416dp" />-->
+    <TextView
+        android:id="@+id/five"
+        android:layout_width="14dp"
+        android:layout_height="25dp"
+        android:text="5"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="312dp" />
 
 
-<!--    <ImageView-->
-<!--        android:id="@+id/one"-->
-<!--        android:layout_width="42dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:src="@drawable/btn_star"-->
-<!--        tools:layout_editor_absoluteX="56dp"-->
-<!--        tools:layout_editor_absoluteY="523dp" />-->
+    <ImageView
+        android:id="@+id/fivestar"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_star"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="312dp" />
 
-<!--    <Button-->
-<!--        android:id="@+id/submitButton"-->
-<!--        android:layout_width="215dp"-->
-<!--        android:layout_height="55dp"-->
-<!--        android:backgroundTint="#805EC3"-->
-<!--        android:text="Submit Review"-->
-<!--        tools:layout_editor_absoluteX="98dp"-->
-<!--        tools:layout_editor_absoluteY="783dp" />-->
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="14dp"
+        android:layout_height="25dp"
+        android:text="4"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="363dp" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/comments"-->
-<!--        android:layout_width="298dp"-->
-<!--        android:layout_height="129dp"-->
-<!--        android:background="@android:drawable/editbox_background_normal"-->
-<!--        android:gravity="start|top"-->
-<!--        android:hint="Type your comments here..."-->
-<!--        android:inputType="textMultiLine"-->
-<!--        android:padding="12dp"-->
-<!--        tools:layout_editor_absoluteX="43dp"-->
-<!--        tools:layout_editor_absoluteY="636dp" />-->
+    <ImageView
+        android:id="@+id/fourstar"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_star"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="14dp"
+        android:layout_height="25dp"
+        android:text="3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+
+    <ImageView
+        android:id="@+id/threestar"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_star"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="14dp"
+        android:layout_height="25dp"
+        android:text="2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+
+    <ImageView
+        android:id="@+id/twostar"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_star"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="14dp"
+        android:layout_height="25dp"
+        android:text="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+    <ImageView
+        android:id="@+id/onestar"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:src="@drawable/btn_star"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="515dp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#805EC3"
+        android:text="Submit Review"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="298dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:gravity="start|top"
+        android:hint="Type your comments here..."
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
