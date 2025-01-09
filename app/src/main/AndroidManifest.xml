@@ -49,22 +49,22 @@
             android:name=".layout1"
             android:exported="false" />
         <activity
-            android:name=".layout7"
-            android:exported="false" />
-        <activity
-            android:name=".layout_6"
-            android:exported="false" />
-        <activity
-            android:name=".layout5"
-            android:exported="false" />
-        <activity
-            android:name=".layout_4"
+            android:name=".layout2"
             android:exported="false" />
         <activity
             android:name=".layout3"
             android:exported="false" />
         <activity
-            android:name=".layout2"
+            android:name=".layout_4"
+            android:exported="false" />
+        <activity
+            android:name=".layout5"
+            android:exported="false" />
+        <activity
+            android:name=".layout_6"
+            android:exported="false" />
+        <activity
+            android:name=".layout7"
             android:exported="false" />
         <activity
             android:name=".login"

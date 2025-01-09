@@ -26,7 +26,6 @@ public class order extends AppCompatActivity {
         btnNext = findViewById(R.id.btnnext);
         textView15 = findViewById(R.id.textView15);
         textView5 = findViewById(R.id.textView5);
-        textView6 = findViewById(R.id.textView6);
         textView3 = findViewById(R.id.textView3);
         textView16 = findViewById(R.id.textView16);
         textView2 = findViewById(R.id.textView2);
