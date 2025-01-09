@@ -66,10 +66,10 @@
         android:id="@+id/linearLayout"
         android:layout_width="383dp"
         android:layout_height="260dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="36dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button">
 
@@ -111,14 +111,6 @@
             android:text="Reviews and Comments"
             android:textColor="@android:color/black" />
 
-        <Button
-            android:id="@+id/up"
-            android:layout_width="214dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/darker_gray"
-            android:text="Update"
-            android:textColor="@android:color/black" />
-
     </LinearLayout>
 
     <Button
@@ -131,7 +123,7 @@
         android:text="Edit profile"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -140,12 +132,13 @@
         android:layout_width="233dp"
         android:layout_height="23dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="144dp"
+        android:layout_marginBottom="184dp"
         android:text="For details or any enquiry contact: #####"
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton

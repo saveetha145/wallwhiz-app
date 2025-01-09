@@ -63,7 +63,8 @@ public class adminprofile extends AppCompatActivity  {
         btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle select button click
+                Intent intent = new Intent(button.this, changeProfileButton.class);
+                startActivity(intent);
             }
         });
 

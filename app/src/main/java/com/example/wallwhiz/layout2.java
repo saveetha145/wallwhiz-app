@@ -13,7 +13,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class layout2 extends AppCompatActivity {
+public class
+
+
+
+
+layout2 extends AppCompatActivity {
 
 
     private Button btnBack, btnNext, btnSelect;
