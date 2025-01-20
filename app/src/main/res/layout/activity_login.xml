@@ -8,15 +8,16 @@
     android:background="@drawable/logoblur_img"
     tools:context=".login">
 
+
     <View
         android:id="@+id/view"
-        android:layout_width="412dp"
-        android:layout_height="175dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="-5dp"
         android:background="@drawable/poly"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/desgin"
         android:layout_width="wrap_content"
@@ -105,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginTop="24dp"
-                android:background="@drawable/btn_bg"
+                android:background="@drawable/button_bg"
                 android:text="Login"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white" />

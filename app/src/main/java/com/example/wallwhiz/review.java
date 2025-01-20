@@ -1,50 +1,81 @@
 package com.example.wallwhiz;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 
-class review extends AppCompatActivity {
+public class review extends AppCompatActivity {
 
-    private Button submitButton;
+    private TextView desgin, write, exp, five, four, three, two, one;
+    private ImageView logo, fivestar, fourstar, threestar, twostar, onestar;
     private EditText comments;
-    private ImageView star1, star2, star3, star4, star5;
+    private Button submitButton;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_review);
+        setContentView(R.layout.activity_review); // Ensure this matches your XML file name
 
-        // Initialize views
+        // Initialize TextViews
+        desgin = findViewById(R.id.desgin);
+        write = findViewById(R.id.write);
+        exp = findViewById(R.id.exp);
+        five = findViewById(R.id.five);
+        four = findViewById(R.id.four);
+        three = findViewById(R.id.three);
+        two = findViewById(R.id.two);
+        one = findViewById(R.id.one);
+
+        // Initialize ImageViews
+        logo = findViewById(R.id.logo);
+        fivestar = findViewById(R.id.fivestar);
+        fourstar = findViewById(R.id.fourstar);
+        threestar = findViewById(R.id.threestar);
+        twostar = findViewById(R.id.twostar);
+        onestar = findViewById(R.id.onestar);
+
+        // Initialize EditText
+        comments = findViewById(R.id.comments);
+
+        // Initialize Button
         submitButton = findViewById(R.id.submitButton);
-//        comments = findViewById(R.id.comments);
-//        star1 = findViewById(R.id.five1); // Note: There are multiple ImageViews with the same id, this will only find the first one
-//        star2 = findViewById(R.id.four); // Note: There are multiple ImageViews with the same id, this will only find the first one
 
-        // Set click listeners for buttons
+        // Set OnClickListener for the submit button
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Get comments from edit text
-                String comment = comments.getText().toString();
+                String userComments = comments.getText().toString();
 
-                // Validate comments
-                if (comment.isEmpty()) {
-                    Toast.makeText(review.this, "Please enter your comments", Toast.LENGTH_SHORT).show();
-                    return;
+                if (userComments.isEmpty()) {
+                    Toast.makeText(review.this, "Please enter your comments!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(review.this, "Review submitted!", Toast.LENGTH_SHORT).show();
+                    goToNextActivity();
                 }
-
-                // Submit review (API call or database operation)
-                // For demonstration purposes, just display a toast message
-                Toast.makeText(review.this, "Review submitted successfully", Toast.LENGTH_SHORT).show();
             }
         });
+
+        // Example: Set OnClickListener for a star (e.g., five stars)
+        fivestar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(review.this, "Rated 5 stars", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        // Similarly, you can set listeners for other star ratings (fourstar, threestar, etc.)
+    }
+
+    private void goToNextActivity() {
+        Toast.makeText(this, "Navigating to the next screen...", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(review.this, upload.class);
+        startActivity(intent);
     }
 }

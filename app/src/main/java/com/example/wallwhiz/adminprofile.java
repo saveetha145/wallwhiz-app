@@ -34,7 +34,6 @@ public class adminprofile extends AppCompatActivity  {
         password = findViewById(R.id.pw);
         viewOrder = findViewById(R.id.view);
         reviews = findViewById(R.id.reco);
-        update = findViewById(R.id.up);
 
         // Set click listeners for buttons
         button.setOnClickListener(new View.OnClickListener() {
