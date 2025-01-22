@@ -7,16 +7,16 @@
     android:layout_height="match_parent"
     android:background="@drawable/logoblur_img">
 
+
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:layout_marginTop="-5dp"
         android:background="@drawable/poly"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/desgin"
         android:layout_width="wrap_content"
@@ -142,7 +142,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginTop="24dp"
-                android:background="@drawable/btn_bg"
+                android:background="@drawable/button_bg"
                 android:text="Submit"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white" />

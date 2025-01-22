@@ -112,31 +112,30 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="44dp"
         android:layout_weight="1"
-        android:background="@drawable/btn_bgpurple"
+        android:background="@drawable/button_bg"
         android:text="Back"
-        android:textAllCaps="false"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_adjust"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_adjust"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnnext"
         android:layout_width="92dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="8dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="32dp"
         android:layout_weight="1"
-        android:background="@drawable/btn_bgpurple"
+        android:background="@drawable/button_bg"
         android:text="Next"
-        android:textAllCaps="false"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintVertical_bias="0.922" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

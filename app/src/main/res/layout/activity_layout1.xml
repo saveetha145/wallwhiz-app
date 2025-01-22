@@ -5,68 +5,68 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_img"
     tools:context=".layout1">
+
 
     <View
         android:id="@+id/view"
-        android:layout_width="408dp"
-        android:layout_height="146dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="-5dp"
         android:background="@drawable/poly"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="3dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pencil_img" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pencil_img" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="3dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/digital_img" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/digital_img" />
 
-        </LinearLayout>
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/layout"
-            android:layout_width="124dp"
-            android:layout_height="33dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
-            android:fontFamily="@font/titan_one"
-            android:text="LAYOUT 1"
-            android:textColor="@android:color/black"
-            android:textSize="23sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.549"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/layout"
+        android:layout_width="124dp"
+        android:layout_height="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/titan_one"
+        android:text="LAYOUT 1"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="56dp"
-        android:layout_height="44dp"
+        android:layout_height="39dp"
         android:layout_marginTop="12dp"
         android:src="@drawable/logo_img"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,54 +74,52 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.175" />
+        app:layout_constraintVertical_bias="0.206" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="144dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnback"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="56dp"
+            android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_bgpurple"
+            android:background="@drawable/button_bg"
             android:text="Back"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnnext"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginEnd="24dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn_bgpurple"
-            android:text="Next"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.933" />
+            android:textColor="@android:color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnselect"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginEnd="160dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_bgpurple"
+            android:background="@drawable/button_bg"
             android:text="Select"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.933" />
+            android:textColor="@android:color/white" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnnext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Next"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 

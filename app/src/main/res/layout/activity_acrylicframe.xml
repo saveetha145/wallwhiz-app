@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_img"
     tools:context=".acrylicframe">
 
         <View
@@ -85,9 +86,8 @@
             android:layout_marginStart="24dp"
             android:layout_marginBottom="56dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_bgpurple"
+            android:background="@drawable/button_bg"
             android:text="Back"
-            android:textAllCaps="false"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -99,9 +99,8 @@
             android:layout_marginHorizontal="8dp"
             android:layout_marginEnd="24dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_bgpurple"
+            android:background="@drawable/button_bg"
             android:text="Next"
-            android:textAllCaps="false"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -115,9 +114,8 @@
             android:layout_marginHorizontal="8dp"
             android:layout_marginEnd="160dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_bgpurple"
+            android:background="@drawable/button_bg"
             android:text="Select"
-            android:textAllCaps="false"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
