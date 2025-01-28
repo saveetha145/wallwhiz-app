@@ -3,44 +3,57 @@ package com.example.wallwhiz;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-
-import com.example.wallwhiz.databinding.ActivityLayout1Binding;
-import com.example.wallwhiz.databinding.ActivityLayout4Binding;
-import com.example.wallwhiz.databinding.ActivitySizeBinding;
-
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 public class layout_4 extends AppCompatActivity {
 
 
-    private ActivityLayout4Binding binding;
-    private AppCompatButton btnNext, btnBack, btnSelectFrames;
+    private Button btnBack, btnNext, btnSelect;
+    private TextView desgin;
+    private ImageView logo, a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_glass);
 
-        binding = ActivityLayout4Binding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-
-        btnNext = findViewById(R.id.btnnext);
+        // Initialize views
         btnBack = findViewById(R.id.btnback);
+        btnNext = findViewById(R.id.btnnext);
+        btnSelect = findViewById(R.id.btnselect);
+        desgin = findViewById(R.id.desgin);
+        logo = findViewById(R.id.logo);
+        a = findViewById(R.id.a);
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(layout_4.this, layout5.class));
-            }
-        });
-
-
+        // Set click listeners for buttons
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to the next activity
+                Intent intent = new Intent(layout_4.this, layout5.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSelect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle select button click
             }
         });
     }

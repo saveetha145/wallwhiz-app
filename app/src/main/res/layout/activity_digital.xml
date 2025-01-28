@@ -94,8 +94,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnselect"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="51dp"
+        android:layout_height="25dp"
         android:layout_marginHorizontal="8dp"
         android:layout_marginEnd="160dp"
         android:layout_weight="1"

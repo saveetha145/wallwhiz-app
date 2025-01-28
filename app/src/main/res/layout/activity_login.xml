@@ -73,7 +73,7 @@
             <EditText
                 android:id="@+id/btnusername"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/edt_bg"
                 android:hint="Enter your username"
@@ -128,7 +128,7 @@
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="368dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:orientation="horizontal"

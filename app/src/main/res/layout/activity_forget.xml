@@ -133,7 +133,7 @@
                     android:paddingHorizontal="10dp"
                     android:text="Reset Password"
                     android:textAllCaps="false"
-                    android:textColor="#D9D9D9"
+                    android:textColor="@color/white"
                     android:textSize="12sp" />
             </LinearLayout>
 

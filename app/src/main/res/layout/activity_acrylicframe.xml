@@ -47,10 +47,10 @@
             android:textColor="@android:color/black"
             android:textSize="23sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="@id/view"
             app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="@id/view" />
 
         <ImageView
             android:id="@+id/logo"
@@ -80,48 +80,42 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnback"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="44dp"
+            android:layout_height="21dp"
             android:layout_marginHorizontal="8dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="56dp"
             android:layout_weight="1"
             android:background="@drawable/button_bg"
             android:text="Back"
+            android:textAllCaps="true"
             android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="810dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnnext"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_height="26dp"
             android:layout_marginHorizontal="8dp"
-            android:layout_marginEnd="24dp"
             android:layout_weight="1"
             android:background="@drawable/button_bg"
             android:text="Next"
+            android:textAllCaps="true"
             android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.933" />
+            tools:layout_editor_absoluteX="318dp"
+            tools:layout_editor_absoluteY="805dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnselect"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="8dp"
-            android:layout_marginEnd="160dp"
             android:layout_weight="1"
             android:background="@drawable/button_bg"
             android:text="Select"
+            android:textAllCaps="true"
             android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.933" />
+            tools:layout_editor_absoluteX="177dp"
+            tools:layout_editor_absoluteY="814dp" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+</androidx.constraintlayout.widget.ConstraintLayout>

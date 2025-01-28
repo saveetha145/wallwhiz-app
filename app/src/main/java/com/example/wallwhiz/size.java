@@ -3,11 +3,13 @@ package com.example.wallwhiz;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
-import com.example.wallwhiz.databinding.ActivityLayout1Binding;
 import com.example.wallwhiz.databinding.ActivitySizeBinding;
 
 
@@ -31,8 +33,36 @@ public class size extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(size.this, layout1.class));
+                  startActivity(new Intent(size.this,layout1.class));
             }
+        });
+
+        binding.frame1.setOnClickListener(v -> {
+            startActivity(new Intent(size.this, layout1.class));
+        });
+        binding.frame2.setOnClickListener(v -> {
+            startActivity(new Intent(size.this, layout2.class));
+        });
+        binding.frame3.setOnClickListener(v -> {
+            startActivity(new Intent(size.this, layout3.class));
+        });
+        binding.frame4.setOnClickListener(v -> {
+            startActivity(new Intent(size.this, layout_4.class));
+        });
+        binding.frame5.setOnClickListener(v -> {
+            startActivity(new Intent(size.this, layout5.class));
+        });
+        binding.frame6.setOnClickListener(v -> {
+            startActivity(new Intent(size.this, layout_6.class));
+        });
+        binding.frame7.setOnClickListener(v -> {
+            startActivity(new Intent(size.this, layout7.class));
+        });
+        binding.frame8.setOnClickListener(v -> {
+            startActivity(new Intent(size.this, layout7.class));
+        });
+        binding.frame9.setOnClickListener(v -> {
+            startActivity(new Intent(size.this, layout1.class));
         });
 
 
@@ -43,7 +73,6 @@ public class size extends AppCompatActivity {
             }
         });
     }
-}
 
    /* private void setImageViewListeners() {
         first.setOnClickListener(new View.OnClickListener() {
@@ -127,4 +156,4 @@ public class size extends AppCompatActivity {
 //            startActivity(intent);
 //        }
 //    }
-
+}
