@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+
+    <TextView
+        android:id="@+id/desgin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="METAL FRAMES"
+        android:textColor="@android:color/black"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/metal1"
+        android:layout_width="302dp"
+        android:layout_height="304dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="444dp"
+        android:src="@drawable/metal1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/metal1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/metal2"
+        android:layout_width="291dp"
+        android:layout_height="269dp"
+        android:src="@drawable/metal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/metal1" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnback"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="72dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="Back"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/metal2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

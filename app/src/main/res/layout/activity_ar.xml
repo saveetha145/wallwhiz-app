@@ -5,48 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_img"
-    tools:context=".ar">
+    android:background="@drawable/background2"
+    tools:context=".Ar">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="-5dp"
-        android:background="@drawable/poly"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/ar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/inter_bold"
         android:text="AR VISUALIZATION"
-        android:fontFamily="@font/titan_one"
         android:textColor="@android:color/black"
-        android:textSize="23sp"
+        android:textSize="29sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view"
-        app:layout_constraintVertical_bias="0.322" />
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/logo_img"
-        app:layout_constraintBottom_toTopOf="@+id/rectangles"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/rectangles"
@@ -67,6 +43,7 @@
             android:layout_width="214dp"
             android:layout_height="91dp"
             android:layout_marginBottom="204dp"
+            android:gravity="center"
             android:text="Live camera view"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
@@ -98,42 +75,45 @@
         android:text="POSITION OF FRAME"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_adjust" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnback"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginHorizontal="8dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="44dp"
-        android:layout_weight="1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/button_bg"
+        android:gravity="center"
         android:text="Back"
+        android:textAllCaps="true"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn_adjust"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_adjust"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintTop_toBottomOf="@id/btn_adjust"
+        app:layout_goneMarginStart="20dp" />
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnnext"
-        android:layout_width="92dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginHorizontal="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
         android:layout_weight="1"
         android:background="@drawable/button_bg"
+        android:gravity="center"
         android:text="Next"
+        android:textAllCaps="true"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922" />
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toEndOf="@id/btnback"
+        app:layout_constraintTop_toBottomOf="@id/btn_position" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

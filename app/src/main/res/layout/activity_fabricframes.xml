@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".fabric_frames">
+
+
+    <TextView
+        android:id="@+id/fabric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="FABRIC FRAMES"
+        android:textColor="@android:color/black"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fabric1"
+        android:layout_width="268dp"
+        android:layout_height="327dp"
+        android:layout_marginBottom="436dp"
+        android:src="@drawable/fabric1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fabric2"
+        android:layout_width="235dp"
+        android:layout_height="294dp"
+        android:layout_marginBottom="104dp"
+        android:src="@drawable/fabric2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnback"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="Back"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fabric2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

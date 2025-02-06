@@ -5,54 +5,36 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logoblur_img">
+    android:background="@drawable/background2">
 
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="-5dp"
-        android:background="@drawable/poly"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/desgin"
+        android:id="@+id/sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/inter_bold"
         android:text="SIGNUP"
-        android:fontFamily="@font/titan_one"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="@id/view"
-        app:layout_constraintBottom_toBottomOf="@id/view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/logo_img"
+        android:textSize="29sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="46dp"
         android:layout_marginTop="30dp"
+        android:layout_marginBottom="156dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="8dp"
         app:cardElevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo"
         app:layout_constraintVertical_bias="0.088">
 
         <LinearLayout
@@ -135,7 +117,7 @@
                 android:hint="Enter your password"
                 android:paddingHorizontal="20dp"
                 android:textColorHint="#3C3C3C"
-                android:textSize="12sp" />
+                android:textSize="15sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_submit"
@@ -144,10 +126,10 @@
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/button_bg"
-                android:text="SUMBIT"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:textColor="@android:color/white" />
+                android:text="SUMBIT"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
 
         </LinearLayout>
 

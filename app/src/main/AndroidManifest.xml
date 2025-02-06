@@ -1,18 +1,14 @@
-
-
-
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
-
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
 
     <application
         android:allowBackup="true"
@@ -25,93 +21,11 @@
         android:theme="@style/Theme.WallWhiz"
         tools:targetApi="31">
         <activity
-            android:name=".acrylicframe"
-            android:exported="false" />
-        <activity
-            android:name=".adminprofile"
-            android:exported="false" />
-        <activity
-            android:name=".ar"
-            android:exported="false" />
-        <activity
-            android:name=".delivery"
-            android:exported="false" />
-        <activity
-            android:name=".digital"
-            android:exported="false" />
-        <activity
-            android:name=".editprofile"
-            android:exported="false" />
-        <activity
-            android:name=".forget"
-            android:exported="false" />
-        <activity
-            android:name=".glass"
-            android:exported="false" />
-        <activity
-            android:name=".layout1"
-            android:exported="false" />
-        <activity
-            android:name=".layout7"
-            android:exported="false" />
-        <activity
-            android:name=".layout_6"
-            android:exported="false" />
-        <activity
-            android:name=".layout5"
-            android:exported="false" />
-        <activity
-            android:name=".layout_4"
-            android:exported="false" />
-        <activity
-            android:name=".layout3"
-            android:exported="false" />
-        <activity
-            android:name=".layout2"
-            android:exported="false" />
-        <activity
-            android:name=".login"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".mosaic"
-            android:exported="false" />
-        <activity
-            android:name=".oil"
-            android:exported="false" />
-        <activity
-            android:name=".order"
-            android:exported="false" />
-        <activity
-            android:name=".orderlist"
-            android:exported="false" />
-        <activity
-            android:name=".pencil"
-            android:exported="false" />
-        <activity
-            android:name=".review"
-            android:exported="false" />
-        <activity
-            android:name=".signup"
-            android:exported="false" />
-        <activity
-            android:name=".size"
-            android:exported="true" >
-
-        </activity>
-        <activity
-            android:name=".truck"
-            android:exported="false" />
-        <activity
-            android:name=".upload"
+            android:name=".FramesSelection"
             android:exported="false" />
         <activity
             android:name=".Welcome"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -119,16 +33,79 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".woodenart"
-            android:exported="false" />
+            android:name=".Sign_Up"
+            android:exported="true" />
         <activity
-            android:name=".woodenframe"
-            android:exported="false" />
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".Forget_password"
+            android:exported="true" />
+        <activity
+            android:name=".Size_check"
+            android:exported="true" />
+        <activity
+            android:name=".Upload_image"
+            android:exported="true" />
+        <activity
+            android:name=".Layout1"
+            android:exported="true" />
+        <activity
+            android:name=".Layout2"
+            android:exported="true" />
+        <activity
+            android:name=".Layout3"
+            android:exported="true" />
+        <activity
+            android:name=".Layout4"
+            android:exported="true" />
+        <activity
+            android:name=".Glass_frames"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_profile"
+            android:exported="true" />
+        <activity
+            android:name=".fabric_frames"
+            android:exported="true" />
+        <activity
+            android:name=".Delivery"
+            android:exported="true" />
+        <activity
+            android:name=".Edit_profile"
+            android:exported="true" />
+        <activity
+            android:name=".Order"
+            android:exported="true" />
+        <activity
+            android:name=".Orderlist"
+            android:exported="true" />
+        <activity
+            android:name=".Layout5"
+            android:exported="true" />
+        <activity
+            android:name=".Layout6"
+            android:exported="true" />
+        <activity
+            android:name=".Layout7"
+            android:exported="true" />
+        <activity
+            android:name=".Plastic_frames"
+            android:exported="true" />
+        <activity
+            android:name=".Ar"
+            android:exported="true" />
+        <activity
+            android:name=".Metal_frames"
+            android:exported="true" />
+        <activity
+            android:name=".Review_comments"
+            android:exported="true" />
+        <activity android:name=".Wooden_frames"
+            android:exported="true" />
 
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

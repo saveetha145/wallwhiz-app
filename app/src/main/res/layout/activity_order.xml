@@ -5,31 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_img"
-    tools:context=".order">
+    android:background="@drawable/background2"
+    tools:context=".Order">
 
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@drawable/poly"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/customize_frame"
         android:layout_width="277dp"
         android:layout_height="147dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="64dp"
         android:background="#d3d3d3"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo">
+        app:layout_constraintTop_toBottomOf="@+id/admin_profile">
 
         <TextView
             android:id="@+id/customize_frame_text"
@@ -98,7 +89,7 @@
         android:layout_width="292dp"
         android:layout_height="43dp"
         android:layout_marginBottom="12dp"
-        android:text="➤ Design of frame   :"
+        android:text="➤ Selected frame   :"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
@@ -136,34 +127,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnback"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginHorizontal="8dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
         android:layout_weight="1"
         android:background="@drawable/button_bg"
+        android:gravity="center"
         android:text="Back"
+        android:textAllCaps="true"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnnext"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginHorizontal="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="24dp"
         android:layout_weight="1"
         android:background="@drawable/button_bg"
+        android:gravity="center"
         android:text="Next"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintVertical_bias="0.952" />
 
     <TextView
         android:id="@+id/admin_profile"
@@ -171,23 +166,12 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="44dp"
-        android:fontFamily="@font/titan_one"
+        android:fontFamily="@font/inter_bold"
         android:text="ORDER"
         android:textColor="@android:color/black"
-        android:textSize="23sp"
+        android:textSize="29sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="164dp"
-        android:src="@drawable/logo_img"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

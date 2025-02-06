@@ -5,181 +5,183 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_img"
-    tools:context=".size">
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="-5dp"
-        android:background="@drawable/poly"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@drawable/background2"
+    tools:context=".Size_check">
 
 
     <TextView
-        android:id="@+id/desgin"
+        android:id="@+id/size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/titan_one"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter_bold"
         android:text="SIZE OF FRAMES"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@id/view"
+        android:textSize="29sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.418" />
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/logo_img"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/btnSelectFrames"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="*Click and slecet the size of the frame"
-        android:textSize="10sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="40dp"
-        android:textStyle="bold"
+        android:layout_marginTop="32dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/lay3"
+        android:text="*Click and slecet the size of the frame"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lay3" />
 
     <LinearLayout
         android:id="@+id/lay1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="3"
-        android:layout_marginTop="40dp"
-        app:layout_constraintTop_toBottomOf="@id/logo">
+        app:layout_constraintBottom_toTopOf="@+id/lay2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/size">
+
         <ImageView
             android:id="@+id/frame1"
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_weight="1"
             android:layout_marginHorizontal="30dp"
-            android:src="@drawable/first"
-            android:background="#F5D8D0"/>
+            android:layout_weight="1"
+            android:background="#F5D8D0"
+            android:src="@drawable/first" />
+
         <ImageView
             android:id="@+id/frame2"
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_weight="1"
-            android:src="@drawable/two"
             android:layout_marginHorizontal="30dp"
-            android:background="#F5D8D0"/>
+            android:layout_weight="1"
+            android:background="#F5D8D0"
+            android:src="@drawable/two" />
+
         <ImageView
             android:id="@+id/frame3"
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_weight="1"
-            android:src="@drawable/three"
             android:layout_marginHorizontal="30dp"
-            android:background="#F5D8D0"/>
+            android:layout_weight="1"
+            android:background="#F5D8D0"
+            android:src="@drawable/three" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/lay2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
         android:weightSum="3"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/lay1">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size">
+
         <ImageView
             android:id="@+id/frame4"
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_weight="1"
             android:layout_marginHorizontal="30dp"
-            android:src="@drawable/four"
-            android:background="#F5D8D0"/>
+            android:layout_weight="1"
+            android:background="#F5D8D0"
+            android:src="@drawable/four" />
+
         <ImageView
             android:id="@+id/frame5"
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_weight="1"
-            android:src="@drawable/five"
             android:layout_marginHorizontal="30dp"
-            android:background="#F5D8D0"/>
+            android:layout_weight="1"
+            android:background="#F5D8D0"
+            android:src="@drawable/five" />
+
         <ImageView
             android:id="@+id/frame6"
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_weight="1"
-            android:src="@drawable/six"
             android:layout_marginHorizontal="30dp"
-            android:background="#F5D8D0"/>
+            android:layout_weight="1"
+            android:background="#F5D8D0"
+            android:src="@drawable/six" />
     </LinearLayout>
+
     <LinearLayout
+
         android:id="@+id/lay3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:weightSum="3"
-        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lay2">
+
         <ImageView
             android:id="@+id/frame7"
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_weight="1"
             android:layout_marginHorizontal="30dp"
-            android:src="@drawable/seven"
-            android:background="#F5D8D0"/>
+            android:layout_weight="1"
+            android:background="#F5D8D0"
+            android:src="@drawable/seven" />
+
         <ImageView
             android:id="@+id/frame8"
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_weight="1"
-            android:src="@drawable/eight"
             android:layout_marginHorizontal="30dp"
-            android:background="#F5D8D0"/>
+            android:layout_weight="1"
+            android:background="#F5D8D0"
+            android:src="@drawable/eight" />
+
         <ImageView
             android:id="@+id/frame9"
             android:layout_width="match_parent"
             android:layout_height="95dp"
-            android:layout_weight="1"
-            android:src="@drawable/nine"
             android:layout_marginHorizontal="30dp"
-            android:background="#F5D8D0"/>
+            android:layout_weight="1"
+            android:background="#F5D8D0"
+            android:src="@drawable/nine" />
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnnext"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_bg"
         android:text="Next"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectFrames"
+        app:layout_constraintVertical_bias="0.662" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnback"
         android:layout_width="80dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="44dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_bg"
         android:text="Back"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectFrames"
+        app:layout_constraintVertical_bias="0.662" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

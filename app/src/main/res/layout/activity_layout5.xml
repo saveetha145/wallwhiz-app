@@ -5,20 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_img"
-    tools:context=".layout5">
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="408dp"
-        android:layout_height="146dp"
-        android:background="@drawable/poly"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    android:background="@drawable/background2"
+    tools:context=".Layout5">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -117,32 +105,21 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/delivery"
-            android:layout_width="124dp"
-            android:layout_height="33dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="24dp"
-            android:fontFamily="@font/titan_one"
-            android:text="LAYOUT 5"
-            android:textColor="@android:color/black"
-            android:textSize="23sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="56dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="104dp"
-            android:src="@drawable/logo_img"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.489"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="233dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="LAYOUT 5"
+        android:textColor="@android:color/black"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

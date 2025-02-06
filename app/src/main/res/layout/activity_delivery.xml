@@ -5,49 +5,25 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_img"
-    tools:context=".delivery">
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="-5dp"
-        android:background="@drawable/poly"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@drawable/background2"
+    tools:context=".Delivery">
 
 
     <TextView
         android:id="@+id/delivery"
-        android:layout_width="124dp"
-        android:layout_height="33dp"
+        android:layout_width="148dp"
+        android:layout_height="36dp"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/titan_one"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/inter_bold"
         android:text="DELIVERY"
         android:textColor="@android:color/black"
-        android:textSize="23sp"
+        android:textSize="29sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/view"
-        app:layout_constraintVertical_bias="0.307" />
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/logo_img"
-        app:layout_constraintBottom_toTopOf="@+id/customize_frame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/customize_frame"
@@ -100,48 +76,35 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnback"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginHorizontal="8dp"
-        android:layout_marginStart="24dp"
-        android:layout_weight="1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/button_bg"
+        android:gravity="center"
         android:text="Back"
+        android:textAllCaps="true"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952" />
+        app:layout_constraintTop_toBottomOf="@id/scan"
+        app:layout_goneMarginStart="20dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnnext"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/button_bg"
-        android:text="Next"
+        android:gravity="center"
+        android:text="NEXT"
+        android:textAllCaps="true"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952" />
+        app:layout_constraintStart_toEndOf="@id/btnback"
+        app:layout_constraintTop_toBottomOf="@id/gpay"
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnselect"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="8dp"
-        android:layout_marginEnd="152dp"
-        android:layout_weight="1"
-        android:background="@drawable/button_bg"
-        android:text="Select"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952" />
+        />
 
     <TextView
         android:id="@+id/details"
